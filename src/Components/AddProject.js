@@ -13,9 +13,11 @@ class AddProject extends Component {
   }
 
   handleSubmit(e){
-    if(this.refs.title.value=== ''){
-      alert('Title is required')
-    };
+    if(this.refs.title.value===''){
+          alert('Title is required');
+    }else{
+      console.log(this.refs.title.value);
+    }
     e.preventDefault();
   }
 
