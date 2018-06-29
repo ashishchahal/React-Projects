@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import AddProject from './Components/AddProject';
 import Project from './Components/Projects';
-
+import Parent from './Components/Parent_Statless_Components';
 
 class App extends React.Component {
   constructor(props){
@@ -34,7 +34,7 @@ class App extends React.Component {
       <div className="App">
         <AddProject />
         <Project projects={this.state.projects} />
-
+        <Parent />
       </div>
     )
   }
