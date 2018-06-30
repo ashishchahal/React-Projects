@@ -1,5 +1,6 @@
 import React from 'react';
 import Child from './Child_Stateless_Component';
+import Sibling from './Sibling_Stateless_Component';
 
 class Parent extends React.Component{
   constructor(){
@@ -13,7 +14,10 @@ class Parent extends React.Component{
   }
   render(){
     return (
-    <Child name={this.state.name} onChange={this.changeName} />)
+    <div>
+     <Child name={this.state.name} onChange={this.changeName} />
+     <Sibling name={this.state.name} />
+    </div>)
   }
 }
 export default Parent;
