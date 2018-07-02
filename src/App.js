@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import AddProject from './Components/AddProject';
 import Project from './Components/Projects';
-import Parent from './Components/Parent_Statless_Components'; 
+import Parent from './Components/Parent_Statless_Components';
 import Stateful from './Practice/Stateful_Component';
 
 class App extends React.Component {
@@ -10,7 +10,8 @@ class App extends React.Component {
     super();
     this.state = {
       projects: [],
-      name: 'Ashish'
+      name: 'Ashish',
+      age: 23
     }
 
   }
