@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import AddProject from './Components/AddProject';
 import Project from './Components/Projects';
-/*import Parent from './Components/Parent_Statless_Components'; */
+import Parent from './Components/Parent_Statless_Components'; 
 import Stateful from './Practice/Stateful_Component';
 
 class App extends React.Component {
@@ -31,12 +31,13 @@ class App extends React.Component {
       }]
     })
   }
+
   render() {
     return (
       <div className="App">
         <AddProject />
         <Project projects={this.state.projects} />
-    {/*    <Parent />  */}
+        <Parent />
         <Stateful title={this.state.name} />
       </div>
     )
