@@ -20,7 +20,7 @@ class Comment extends Component{
 
   renderNormal(){
     <div className="containerClass">
-      <div className="content"> {this.props.children} </div>
+      <div className="content"> Ashish </div>
       <button onClick="this.edit"> Edit </button>
       <button onClick="this.remove"> Remove </button>
     </div>
@@ -28,17 +28,23 @@ class Comment extends Component{
 
   renderForm(){
     <div className="containerClass">
-      <textArea defaultValue= {this.props.children}> </textArea>
+      <textArea defaultValue= 'Ashish'> </textArea>
       <button onClick="this.save"> Save </button>
     </div>
   }
 
-  render(){
+  kya(){
+    const renderN = this.renderNormal();
+    const renderF = this.renderForm();
     if(this.state.editing){
-      return this.renderNormal()
+      return renderN
     }else{
-      return this.renderForm()
-    }
+      return renderF    }
+  }
+
+  render(){
+    const kya1= this.kya()
+    return <div> {kya1} </div>;
     }
 }
 
