@@ -12,5 +12,9 @@ ReactDOM.render(<div>
                   <ComponentWillUpdate text= "Hello World!!" />
                 </div>, document.getElementById('root'))
 
+                setTimeout(() =>{
+                  ReactDOM.render(<ComponentWillUpdate />,
+                                    document.getElementById('root'));
+                }, 3500)
 
 registerServiceWorker();
